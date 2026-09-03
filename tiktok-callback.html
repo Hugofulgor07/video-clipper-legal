@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TikTok callback — Video Clipper</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 28rem; margin: 3rem auto; padding: 0 1rem; color: #111; }
+  </style>
+</head>
+<body>
+  <p>Volviendo a Video Clipper…</p>
+  <script>
+    (function () {
+      var localBase = 'http://127.0.0.1:5173/api/social/tiktok/callback';
+      var params = window.location.search || '';
+      if (!params || params === '?') {
+        document.body.innerHTML = '<p>Falta la respuesta de TikTok. Cierra esta pestaña y vuelve a intentar Conectar.</p>';
+        return;
+      }
+      window.location.replace(localBase + params);
+    })();
+  </script>
+</body>
+</html>
