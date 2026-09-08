@@ -3,21 +3,111 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Video Clipper</title>
+  <title>Video Clipper — Dance clips for TikTok, Reels and Shorts</title>
+  <meta
+    name="description"
+    content="Video Clipper helps dance creators cut long videos into short clips and publish or schedule them to TikTok, YouTube Shorts, Facebook and Instagram."
+  />
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #111; }
-    a { color: #4f46e5; }
+    :root {
+      --bg: #0b1220;
+      --card: #121a2b;
+      --text: #e8eefc;
+      --muted: #9aa8c7;
+      --accent: #3b82f6;
+      --line: #243049;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); }
+    header, main, footer { max-width: 42rem; margin: 0 auto; padding: 1.5rem 1.25rem; }
+    header { padding-top: 3rem; }
+    .brand { font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    h1 { font-size: clamp(2rem, 5vw, 2.6rem); line-height: 1.15; margin: 0.5rem 0 1rem; }
+    .lead { color: var(--muted); font-size: 1.05rem; margin: 0 0 1.5rem; }
+    .legal-links { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0 0; }
+    .legal-links a { font-weight: 600; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1.25rem 1.35rem;
+      margin: 1rem 0;
+    }
+    h2 { font-size: 1.15rem; margin: 0 0 0.75rem; }
+    ul { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+    li { margin: 0.35rem 0; }
+    footer { color: var(--muted); font-size: 0.9rem; padding-bottom: 3rem; }
   </style>
 </head>
 <body>
-  <h1>Video Clipper</h1>
-  <p>
-    App web para cortar videos de baile en clips cortos y publicarlos en TikTok,
-    Instagram, Facebook y YouTube Shorts.
-  </p>
-  <ul>
-    <li><a href="./privacy.html">Política de privacidad</a></li>
-    <li><a href="./terms.html">Términos de servicio</a></li>
-  </ul>
+  <header>
+    <p class="brand">Video Clipper</p>
+    <h1>Cut dance videos. Publish short clips.</h1>
+    <p class="lead">
+      A web app for creators who film social dance nights and want ready-to-post
+      clips for TikTok, YouTube Shorts, Facebook and Instagram — with captions and
+      scheduled publishing.
+    </p>
+    <nav class="legal-links" aria-label="Legal">
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>What it does</h2>
+      <ul>
+        <li>Upload a long dance video from your computer.</li>
+        <li>Automatically generate short clips based on music energy.</li>
+        <li>Create vertical covers suitable for TikTok / Reels / Shorts.</li>
+        <li>Write one caption template (dancer, venue, date, hashtags).</li>
+        <li>Connect social accounts and publish or schedule clips.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>TikTok integration</h2>
+      <ul>
+        <li><strong>Login / connect:</strong> users authorize Video Clipper with TikTok Login Kit (<code>user.info.basic</code>).</li>
+        <li><strong>Upload draft:</strong> Content Posting API <code>video.upload</code> sends a draft to the creator inbox when needed.</li>
+        <li><strong>Direct Post:</strong> Content Posting API <code>video.publish</code> posts on the user’s behalf after they choose to publish in the app.</li>
+        <li>Users can disconnect TikTok anytime; we delete stored tokens.</li>
+        <li>We only act when the user explicitly clicks Publish or Schedule.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Who it’s for</h2>
+      <ul>
+        <li>Dance creators and social event organizers (personal/production tool).</li>
+        <li>Not a consumer social network and not for scraping or spam.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p style="margin:0;color:var(--muted)">
+        Questions about the product or data:
+        <a href="mailto:hugofulgor@gmail.com">hugofulgor@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="./privacy.html">Privacy Policy</a>
+      ·
+      <a href="./terms.html">Terms of Service</a>
+    </p>
+    <p>© 2026 Video Clipper</p>
+  </footer>
 </body>
 </html>
