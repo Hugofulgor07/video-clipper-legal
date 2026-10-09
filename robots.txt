@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /tiktok-callback.html
+Disallow: /meta-callback.html
+Disallow: /instagram-callback.html
+Allow: /
+
+Sitemap: https://videoclipper.site/sitemap.xml

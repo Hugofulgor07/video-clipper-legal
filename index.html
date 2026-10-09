@@ -1,115 +1,193 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Video Clipper</title>
+  <title>Video Clipper — Turn long dance videos into ready-to-post short clips</title>
+  <meta name="description" content="Video Clipper cuts long dance videos into short vertical clips with covers and captions, and publishes or schedules them to TikTok, Instagram Reels, Facebook Reels and YouTube Shorts." />
   <link rel="canonical" href="https://videoclipper.site/" />
-  <meta
-    name="description"
-    content="Video Clipper helps dance creators cut long videos into short clips and publish or schedule them to TikTok, YouTube Shorts, Facebook and Instagram."
-  />
-  <style>
-    :root {
-      --bg: #0b1220;
-      --card: #121a2b;
-      --text: #e8eefc;
-      --muted: #9aa8c7;
-      --accent: #3b82f6;
-      --line: #243049;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", system-ui, sans-serif;
-      background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    a { color: var(--accent); }
-    header, main, footer { max-width: 42rem; margin: 0 auto; padding: 1.5rem 1.25rem; }
-    header { padding-top: 3rem; }
-    .brand { font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-    h1 { font-size: clamp(2rem, 5vw, 2.6rem); line-height: 1.15; margin: 0.5rem 0 1rem; }
-    .lead { color: var(--muted); font-size: 1.05rem; margin: 0 0 1.5rem; }
-    .legal-links { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0 0; }
-    .legal-links a { font-weight: 600; }
-    section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 1rem;
-      padding: 1.25rem 1.35rem;
-      margin: 1rem 0;
-    }
-    h2 { font-size: 1.15rem; margin: 0 0 0.75rem; }
-    ul { margin: 0; padding-left: 1.2rem; color: var(--muted); }
-    li { margin: 0.35rem 0; }
-    footer { color: var(--muted); font-size: 0.9rem; padding-bottom: 3rem; }
-  </style>
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/assets/site.css" />
 </head>
 <body>
-  <header>
-    <p class="brand">videoclipper.site</p>
-    <h1>Video Clipper</h1>
-    <p class="lead"><strong>Cut dance videos. Publish short clips.</strong></p>
-    <p class="lead">
-      A web app for creators who film social dance nights and want ready-to-post
-      clips for TikTok, YouTube Shorts, Facebook and Instagram — with captions and
-      scheduled publishing.
-    </p>
-    <nav class="legal-links" aria-label="Legal">
-      <a href="./privacy-policy">Privacy Policy</a>
-      <a href="./terms-of-service">Terms of Service</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo" href="/"><img src="/assets/icon.svg" alt="" /><span>Video Clipper</span></a>
+      <nav class="links" aria-label="Main">
+        <a href="/features">Features</a>
+        <a href="/how-it-works">How it works</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>What it does</h2>
-      <ul>
-        <li>Upload a long dance video from your computer.</li>
-        <li>Automatically generate short clips based on music energy.</li>
-        <li>Create vertical covers suitable for TikTok / Reels / Shorts.</li>
-        <li>Write one caption template (dancer, venue, date, hashtags).</li>
-        <li>Connect social accounts and publish or schedule clips.</li>
-      </ul>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">For dance creators</span>
+          <h1>Turn one long dance video into a week of short clips.</h1>
+          <p class="lead">
+            Video Clipper splits the videos you film at social dance nights into vertical clips, designs a cover for
+            each one, writes the caption and publishes or schedules every clip to the networks you choose.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/how-it-works">See how it works</a>
+            <a class="btn btn-ghost" href="/contact">Request access</a>
+          </div>
+          <div class="platforms" aria-label="Supported platforms">
+            <span class="chip"><span class="dot" style="background:#111"></span>TikTok</span>
+            <span class="chip"><span class="dot" style="background:#e1306c"></span>Instagram Reels</span>
+            <span class="chip"><span class="dot" style="background:#1877f2"></span>Facebook Reels</span>
+            <span class="chip"><span class="dot" style="background:#ff0000"></span>YouTube Shorts</span>
+          </div>
+        </div>
+
+        <div aria-hidden="true">
+          <div class="phone">
+            <div class="screen">
+              <div class="screen-title">Clips</div>
+              <div class="clip-grid">
+                <div class="clip"><div class="thumb a"><span class="badge">Part 1</span></div><div class="clip-meta"><b>Today 2:00 PM</b><span class="mini-dots"><span class="dot" style="background:#111"></span><span class="dot" style="background:#e1306c"></span><span class="dot" style="background:#ff0000"></span></span></div></div>
+                <div class="clip"><div class="thumb b"><span class="badge">Part 2</span></div><div class="clip-meta"><b>Today 5:00 PM</b><span class="mini-dots"><span class="dot" style="background:#111"></span><span class="dot" style="background:#1877f2"></span></span></div></div>
+                <div class="clip"><div class="thumb c"><span class="badge">Part 3</span></div><div class="clip-meta"><b>Today 8:00 PM</b><span class="mini-dots"><span class="dot" style="background:#e1306c"></span><span class="dot" style="background:#ff0000"></span></span></div></div>
+                <div class="clip"><div class="thumb d"><span class="badge">Part 4</span></div><div class="clip-meta"><b>Tomorrow 9:00 AM</b><span class="mini-dots"><span class="dot" style="background:#111"></span></span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>TikTok integration</h2>
-      <ul>
-        <li><strong>Login / connect:</strong> users authorize Video Clipper with TikTok Login Kit (<code>user.info.basic</code>).</li>
-        <li><strong>Upload draft:</strong> Content Posting API <code>video.upload</code> sends a draft to the creator inbox when needed.</li>
-        <li><strong>Direct Post:</strong> Content Posting API <code>video.publish</code> posts on the user’s behalf after they choose to publish in the app.</li>
-        <li>Users can disconnect TikTok anytime; we delete stored tokens.</li>
-        <li>We only act when the user explicitly clicks Publish or Schedule.</li>
-      </ul>
+    <section class="block soft">
+      <div class="wrap">
+        <h2>Everything between “I filmed it” and “it’s posted”</h2>
+        <p class="section-lead">
+          Posting a dance night by hand means trimming, exporting, making covers, rewriting captions and logging in to four
+          apps. Video Clipper does that work in one place, and nothing is posted until you decide.
+        </p>
+        <div class="grid-3">
+          <div class="card">
+            <div class="icon-box">✂️</div>
+            <h3>Automatic clips</h3>
+            <p>Upload a full video and get short clips cut at natural points of the music, in vertical 9:16 format.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box">🖼️</div>
+            <h3>Covers that match your brand</h3>
+            <p>Each clip gets a cover with your logo, your @handle and a “Part N” label, placed so it never covers a face.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box">✍️</div>
+            <h3>Captions in one step</h3>
+            <p>Write the dancer, venue, date and hashtags once. Every clip gets its own caption, adapted to each network.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box">📅</div>
+            <h3>Scheduling and calendar</h3>
+            <p>Suggested posting times spread through the day, and a calendar of everything that is scheduled.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box">🚀</div>
+            <h3>Publish to four networks</h3>
+            <p>Connect TikTok, Instagram, Facebook and YouTube with their official login, then publish or schedule each clip.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box">📱</div>
+            <h3>Works on desktop and iPhone</h3>
+            <p>A web app you can add to your home screen. Upload from your computer or straight from your phone.</p>
+          </div>
+        </div>
+        <p style="margin-top:1.75rem"><a href="/features">See all features →</a></p>
+      </div>
     </section>
 
-    <section>
-      <h2>Who it’s for</h2>
-      <ul>
-        <li>Dance creators and social event organizers (personal/production tool).</li>
-        <li>Not a consumer social network and not for scraping or spam.</li>
-      </ul>
+    <section class="block">
+      <div class="wrap grid-2" style="align-items:center;gap:3rem">
+        <div>
+          <span class="eyebrow">TikTok integration</span>
+          <h2>Built on TikTok’s official APIs</h2>
+          <p class="section-lead" style="margin-bottom:1.25rem">
+            You connect your TikTok account with TikTok Login Kit. Video Clipper never asks for your password and only acts
+            when you press Publish or Schedule.
+          </p>
+          <ul class="check-list">
+            <li><strong>Login Kit</strong> (<code>user.info.basic</code>) to show which account is connected.</li>
+            <li><strong>Upload to inbox</strong> (<code>video.upload</code>): the clip arrives in your TikTok inbox as a draft so you finish the post in the TikTok app.</li>
+            <li><strong>Direct Post</strong> (<code>video.publish</code>): you choose the privacy level, comments, Duet and Stitch settings and any commercial content disclosure before posting.</li>
+            <li>Disconnect anytime: your TikTok tokens are deleted immediately.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Your content stays yours</h3>
+          <ul class="check-list" style="margin-top:0.75rem">
+            <li>We only publish the clips you select, to the accounts you connected.</li>
+            <li>Access tokens are encrypted at rest (AES-256-GCM).</li>
+            <li>No ads, no data selling, no use of your videos to train AI models.</li>
+            <li>Delete videos, disconnect networks or close your account whenever you want.</li>
+          </ul>
+          <p style="margin-top:1rem"><a href="/privacy-policy">Read the Privacy Policy →</a></p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p style="margin:0;color:var(--muted)">
-        Questions about the product or data:
-        <a href="mailto:hugofulgor@gmail.com">hugofulgor@gmail.com</a>
-      </p>
+    <section class="block soft">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <p class="section-lead">From a two-hour recording to scheduled posts in four steps.</p>
+        <div class="steps">
+          <div class="step"><div><h3>Upload your video</h3><p>Drop a long video from your computer or phone. HDR and iPhone footage are supported.</p></div></div>
+          <div class="step"><div><h3>Review the clips</h3><p>Video Clipper proposes the clips and their covers. Change the cover frame, the text or the order if you want.</p></div></div>
+          <div class="step"><div><h3>Write the caption once</h3><p>Dancer, venue, date and hashtags. Each clip gets “Part 1”, “Part 2”… automatically.</p></div></div>
+          <div class="step"><div><h3>Publish or schedule</h3><p>Pick the networks and times. You can follow every post from the calendar.</p></div></div>
+        </div>
+        <p style="margin-top:1.75rem"><a href="/how-it-works">Step-by-step guide →</a></p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="cta-band">
+          <div>
+            <h2>Want to try Video Clipper?</h2>
+            <p>The app is in private beta and free for invited creators.</p>
+          </div>
+          <a class="btn btn-primary" href="/contact">Request access</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>
-      <a href="./privacy-policy">Privacy Policy</a>
-      ·
-      <a href="./terms-of-service">Terms of Service</a>
-    </p>
-    <p>© 2026 Video Clipper · videoclipper.site</p>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="/"><img src="/assets/icon.svg" alt="" /><span>Video Clipper</span></a>
+        <p>Short clips from long dance videos, ready for every network.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="/features">Features</a>
+        <a href="/how-it-works">How it works</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/data-deletion">Data deletion</a>
+      </div>
+    </div>
+    <div class="wrap copyright">© 2026 Video Clipper · videoclipper.site</div>
   </footer>
 </body>
 </html>
